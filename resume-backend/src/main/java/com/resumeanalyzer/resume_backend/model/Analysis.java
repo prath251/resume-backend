@@ -39,6 +39,27 @@ public class Analysis {
     @Column(columnDefinition = "TEXT")
     private String advice;
 
+    @Column
+    private Integer resumeScore;
+
+    @Column(columnDefinition = "TEXT")
+    private String jobMatches;
+
+    @Column(columnDefinition = "TEXT")
+    private String missingSkills;
+
+    @Column(columnDefinition = "TEXT")
+    private String strengths;
+
+    @Column(columnDefinition = "TEXT")
+    private String improvements;
+
+    @Column(columnDefinition = "TEXT")
+    private String resumeText;
+
+    @Column(columnDefinition = "TEXT")
+    private String profileInsights;
+
     @Column(nullable = false)
     private LocalDateTime analyzedAt = LocalDateTime.now();
 }
